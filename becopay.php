@@ -336,7 +336,7 @@ class plgHikashoppaymentBecopay extends hikashopPaymentPlugin
         $element->payment_description = JText::_('DECOPAY_DESCRIPTION');
         $element->payment_images = '';
         $element->payment_params->invalid_status = 'cancelled';
-        $element->payment_params->verified_status = 'refunded';
+        $element->payment_params->verified_status = 'confirmed';
         $element->payment_params->merchant_currency = self::MERCHANT_CURRENCY;
     }
 
