@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<updates>
+    <update>
+        <name>Hikashop Becopay Payment Plugin</name>
+        <description>This plugin enables you to setup your Becopay payment gateway</description>
+        <element>becopay</element>
+        <type>plugin</type>
+        <folder>hikashoppayment</folder>
+        <version>1.0.0</version>
+        <client>site</client>
+        <infourl title="Becopay Extension Package">https://github.com/becopay/Hikashop-Becopay-Gateway/releases/tag/v1.0.0</infourl>
+        <downloads>
+            <downloadurl type="full" format="zip">https://github.com/becopay/Hikashop-Becopay-Gateway/archive/v1.0.0.zip</downloadurl>
+        </downloads>
+        <targetplatform name="joomla" version="3.[6789]" />
+    </update>
+</updates>
