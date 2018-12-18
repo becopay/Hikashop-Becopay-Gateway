@@ -23,7 +23,7 @@ You must have a Becopay merchant account to use this plugin.  It's free and easy
 
 ## The module installation
 
-1. [Download Hikashop-Becopay-Gateway.zip](https://github.com/becopay/Hikashop-Becopay-Gateway/blob/master/Hikashop-Becopay-Gateway.zip?raw=true)
+1. [Download Hikashop-Becopay-Gateway.zip](https://github.com/becopay/Hikashop-Becopay-Gateway/releases)
 2. Go to __`Joomla's administration panel`__
 3. Via the top menu go to __`Extensions > Manage > Install`__
 4. Install the module package
