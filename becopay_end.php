@@ -1,3 +1,6 @@
+<?php
+defined('_JEXEC') or die('Restricted access');
+?>
 <!-- Here is the ending page, called at the end of the checkout, just before the user is redirected to the payment plateform -->
 <div class="hikashop_becopay_end" id="hikashop_becopay_end">
   <!-- Waiting message -->
@@ -15,7 +18,6 @@
 <?php
 	$doc = JFactory::getDocument();
 	$doc->addScriptDeclaration('window.location="'.$this->payment_params->payment_url.'"');
-	JRequest::setVar('noform',1);
 ?>
 	</form>
 </div>

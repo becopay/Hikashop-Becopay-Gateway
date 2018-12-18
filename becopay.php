@@ -252,15 +252,12 @@ class plgHikashoppaymentBecopay extends hikashopPaymentPlugin
 
         $filter = JFilterInput::getInstance();
 
-        // A loop to create an array $var with all the parameters sent by the payment gateway with a POST method, and loaded in the $_REQUEST
-        foreach ($_REQUEST as $key => $value) {
-            $key = $filter->clean($key);
-            $value = JRequest::getString($key);
-            $vars[$key] = $value;
-        }
+        if(!isset($_REQUEST['orderId']) || empty($_REQUEST['orderId']))
+            return false;
+
 
         // The load the parameters of the plugin in $this->payment_params and the order data based on the order_id coming from the payment platform
-        $order_id = (int)@$vars['orderId'];
+        $order_id = $filter->clean($_REQUEST['orderId'],'INTEGER');
         $dbOrder = $this->getOrder($order_id);
 
         // With the order, we can load the payment method, and thus all the payment parameters
