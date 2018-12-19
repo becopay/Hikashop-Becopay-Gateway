@@ -1,0 +1,27 @@
+{
+  "name": "becoapy/hikashop-becopay-gateway",
+  "description": "becopay hikashop payment gateway",
+  "keywords": ["payment","gateway","payment gateway","becopay","joomla","hikashop"],
+  "homepage": "https://becopay.com/en/io",
+  "type": "joomla-plugin",
+  "version" : "1.0.0",
+  "download_url" : "https://github.com/becopay/Hikashop-Becopay-Gateway/archive/v1.0.0.zip",
+  "sections" : {
+    "description" : "becopay woocommerce payment gateway"
+  },
+  "support": {
+    "issues": "https://github.com/becopay/Hikashop-Becopay-Gateway/issues"
+  },
+  "require": {
+    "php": ">=5.3.0",
+    "becopay/invoice_sdk_php": "v1.1."
+  },
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "becopat team",
+      "email": "io@becopay.com"
+    }
+  ],
+  "minimum-stability": "dev"
+}
