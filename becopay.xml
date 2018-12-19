@@ -7,7 +7,7 @@
     <authorEmail>io@becopay.com</authorEmail>
     <authorUrl>http://becopay.com/en</authorUrl>
     <copyright>(C) 2019-2019 Becopay. All rights reserved.</copyright>
-    <license>https://opensource.org/licenses/Apache-2.0</license>
+    <license>http://www.gnu.org/licenses/gpl-3.0</license>
     <description>This plugin enables you to setup your Becopay payment gateway</description>
 
     <!-- Plugin files -->

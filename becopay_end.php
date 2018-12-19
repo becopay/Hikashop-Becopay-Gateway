@@ -1,4 +1,12 @@
 <?php
+/**
+ * @package    Hikashop-Becopay-Gateway
+ *
+ * @author     Becopay Team <io@becopay.com>
+ * @copyright  (C) 2018-2019 Becopay. All rights reserved.
+ * @license    GNU General Public License version 3 or later; see LICENSE.txt
+ * @link       http://becopay.com/en
+ */
 defined('_JEXEC') or die('Restricted access');
 ?>
 <!-- Here is the ending page, called at the end of the checkout, just before the user is redirected to the payment plateform -->

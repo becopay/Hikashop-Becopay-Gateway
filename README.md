@@ -3,7 +3,7 @@ Becopay payment module for Joomla 2.5/3.x and HikaShop
 
 Version: 1.0.0
 
-License: [Apache 2.0](https://opensource.org/licenses/Apache-2.0)
+License: [GPL-3.0](http://www.gnu.org/licenses/gpl-3.0)
 
 Tags: online payment, payment, payment gateway, becopay, joomla, hikashop
 
@@ -70,8 +70,8 @@ Would you like to help with this project?  Great!  You don't have to be a develo
 
 If you *are* a developer wanting contribute an enhancement, bug fix or other patch to this project, please fork this repository and submit a pull request detailing your changes. We review all PRs!
 
-This open source project is released under the [Apache 2.0 license](https://opensource.org/licenses/Apache-2.0) which means if you would like to use this project's code in your own project you are free to do so.  Speaking of, if you have used our code in a cool new project we would like to hear about it!  [Please send us an email](mailto:io@becopay.com).
+This open source project is released under the [GPL-3.0](http://www.gnu.org/licenses/gpl-3.0) which means if you would like to use this project's code in your own project you are free to do so.  Speaking of, if you have used our code in a cool new project we would like to hear about it!  [Please send us an email](mailto:io@becopay.com).
 
 ## License
 
-Please refer to the [LICENSE](https://opensource.org/licenses/Apache-2.0) file that came with this project.
+Please refer to the [GPL-3.0](http://www.gnu.org/licenses/gpl-3.0) file that came with this project.

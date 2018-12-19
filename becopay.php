@@ -3,8 +3,8 @@
  * @package    Hikashop-Becopay-Gateway
  *
  * @author     Becopay Team <io@becopay.com>
- * @copyright  (C) 2019-2019 Becopay. All rights reserved.
- * @license    Apache License version 2.0; see LICENSE.txt
+` * @copyright  (C) 2018-2019 Becopay. All rights reserved.
+ * @license    GNU General Public License version 3 or later; see LICENSE.txt
  * @link       http://becopay.com/en
  */
 
