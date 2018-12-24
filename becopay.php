@@ -213,7 +213,7 @@ class plgHikashoppaymentBecopay extends hikashopPaymentPlugin
 
             $invoice = $payment->create($order_id, $price->total, $description, $price->currency, $price->merchant_currency);
             if (!$invoice) {
-                $this->displayError('Message'.$payment->error.', '.$description);
+                $this->displayError('Message: '.$payment->error.', '.$description);
                 return $this->app->redirect($checkout_url);
             }
 
@@ -222,7 +222,7 @@ class plgHikashoppaymentBecopay extends hikashopPaymentPlugin
                 $invoice->payerCur != $price->currency ||
                 $invoice->merchantCur != $price->merchant_currency
             ) {
-                $this->displayError('Message:'.JText::_('INVALID_INVOICE').', Response:'.json_encode($invoice));
+                $this->displayError('Message: '.JText::_('INVALID_INVOICE').', Response:'.json_encode($invoice));
                 return $this->app->redirect($checkout_url);
             }
 
@@ -284,7 +284,7 @@ class plgHikashoppaymentBecopay extends hikashopPaymentPlugin
                 // This function modifies the order with the id $order_id, to attribute it the status invalid_status.
                 $this->modifyOrder($order_id, $this->payment_params->invalid_status);
 
-                $this->displayError('Message:'.$payment->error.', orderId:'.(string)$order_id);
+                $this->displayError('Message: '.$payment->error.', orderId:'.(string)$order_id);
                 $this->app->redirect($cancel_url);
                 return false;
             }
@@ -334,7 +334,7 @@ class plgHikashoppaymentBecopay extends hikashopPaymentPlugin
     {
         $element->payment_name = JText::_('BECOPAY');
         $element->payment_description = JText::_('DECOPAY_DESCRIPTION');
-        $element->payment_images = '';
+        $element->payment_images = 'becopay-xs.png';
         $element->payment_params->invalid_status = 'cancelled';
         $element->payment_params->verified_status = 'confirmed';
         $element->payment_params->merchant_currency = self::MERCHANT_CURRENCY;
