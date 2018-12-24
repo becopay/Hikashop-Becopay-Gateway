@@ -213,7 +213,7 @@ class plgHikashoppaymentBecopay extends hikashopPaymentPlugin
 
             $invoice = $payment->create($order_id, $price->total, $description, $price->currency, $price->merchant_currency);
             if (!$invoice) {
-                $this->displayError($payment->error);
+                $this->displayError('Message'.$payment->error.', '.$description);
                 return $this->app->redirect($checkout_url);
             }
 
@@ -222,7 +222,7 @@ class plgHikashoppaymentBecopay extends hikashopPaymentPlugin
                 $invoice->payerCur != $price->currency ||
                 $invoice->merchantCur != $price->merchant_currency
             ) {
-                $this->displayError(JText::_('INVALID_INVOICE'));
+                $this->displayError('Message:'.JText::_('INVALID_INVOICE').', Response:'.json_encode($invoice));
                 return $this->app->redirect($checkout_url);
             }
 
@@ -284,7 +284,7 @@ class plgHikashoppaymentBecopay extends hikashopPaymentPlugin
                 // This function modifies the order with the id $order_id, to attribute it the status invalid_status.
                 $this->modifyOrder($order_id, $this->payment_params->invalid_status);
 
-                $this->displayError($payment->error);
+                $this->displayError('Message:'.$payment->error.', orderId:'.(string)$order_id);
                 $this->app->redirect($cancel_url);
                 return false;
             }
