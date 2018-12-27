@@ -2,7 +2,7 @@
 <extension type="plugin" version="3.1" method="upgrade" group="hikashoppayment">
     <name>Hikashop Becopay Payment Plugin</name>
     <creationDate>12/17/2018</creationDate>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <author>Becopay Team</author>
     <authorEmail>io@becopay.com</authorEmail>
     <authorUrl>http://becopay.com/en</authorUrl>
@@ -17,7 +17,10 @@
         <filename>becopay_end.php</filename>
         <folder>vendor</folder>
     </files>
-
+    <media folder="media" destination="com_hikashop">
+        <folder>images</folder>
+        <filename>index.html</filename>
+    </media>
     <languages>
         <language tag="en-GB">languages/en-GB/en-GB.plg_hikashoppayment_becopay.ini</language>
         <language tag="en-GB">languages/en-GB/en-GB.plg_hikashoppayment_becopay.sys.ini</language>
