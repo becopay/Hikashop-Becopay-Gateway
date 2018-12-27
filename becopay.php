@@ -398,7 +398,7 @@ class plgHikashoppaymentBecopay extends hikashopPaymentPlugin
         if (isset($this->convert_currecny[$currency]))
             return (object)array(
                 'total' => round($price, 2) * $this->convert_currecny[$currency]['ratio'],
-                'currency' => round($price, 2) * $this->convert_currecny[$currency]['to'],
+                'currency' => $this->convert_currecny[$currency]['to'],
                 'merchant_currency' => $merchant_currency
             );
         else
